@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'CkrFont'; /* Name for the new font */
+  src: url('fonts/ckr.ttf') format('truetype');
+  font-weight: 1000;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  font-family: 'CkrFont', sans-serif;
+  background-image: url('pic.jpg'); /* Replace with the correct path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 98vh; /* Adjust the height as needed */
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+              rgba(5, 5, 5, 0.2); /* Adjust the alpha value for transparency */
+  border: 5px solid #06b9eb;
+  border-image: linear-gradient(45deg, #2dbad6, #8f1c8d) 1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.title-1 {
+  background: linear-gradient(90deg, #0c7a92, #f55945, #9f74ab); /* Gradient from red to green to blue */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Make the actual text color transparent to show the gradient */
+  margin-top: 40px; /* Adjust the value as needed */  font-size: 46px;
+
+}
+
+.title-2 {
+  color: #cf2dda; /* Another example color */
+  font-size: 36px;
+
+}
+
+
+
+.profile-image {
+  border-radius: 50%;
+  width: 160px; /* Set the desired width for the image */
+  height: 160px;
+  margin-top: 20px;
+}
+
+.about-me {
+  color: #37abcf;
+  font-size: 36px;
+}
+/* Existing styles */
+
+.social-link {
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+
+  /* Add shining border effect */
+border: 2px solid transparent;
+transition: all 0.3s;
+border-radius: 20px;
+
+/* Sparkling effect on hover */
+&:hover {
+  background: linear-gradient(45deg, #ff9900, #ff00cc);
+  border: 2px solid #f7f6f6; /* Set the border color to white */
+  border-radius: 20px;
+}
+
+&:hover::before,
+&:hover::after {
+  background: linear-gradient(45deg, #fff, #fff); /* Set the background color to white */
+}
+
+  
+}
+
+/* Shining border styles */
+.social-link {
+  position: relative;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px; /* Rounded corners */
+  background: linear-gradient(45deg, #ff9900, #ff00cc);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease-out;
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.social-link:hover::before {
+  transform: scaleX(1);
+}
+
+/* Optional: Additional styles to make the border always visible */
+.social-link::before {
+  transform: scaleX(1);
+}
+
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Rest of your styles */
+
+.h5 {
+  font-size: 28px;
+  background: linear-gradient(90deg, #f3efef, #e0e7e0, #f2f2f5); /* Gradient from red to green to blue */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Make the actual text color transparent to show the gradient */
+  margin-top: 40px; /* Adjust the value as needed */
+}
+
+.h6 {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px; /* Adjust the value as needed */
+}
+

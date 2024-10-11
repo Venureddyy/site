@@ -138,12 +138,12 @@ border-radius: 20px;
 /* Rest of your styles */
 
 .h5 {
-  font-size: 58px;
+  font-size: 42px;
   background: linear-gradient(90deg, #f3efef, #e0e7e0, #f2f2f5); /* Gradient from red to green to blue */
   -webkit-background-clip: text; /* Clip the background to the text */
   background-clip: text; /* For other browsers */
   color: transparent; /* Make the actual text color transparent to show the gradient */
-  margin-top: 25px; /* Adjust the value as needed */
+  margin-top: 35px; /* Adjust the value as needed */
 }
 
 .h6 {

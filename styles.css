@@ -42,13 +42,13 @@ h1 {
   -webkit-background-clip: text; /* Clip the background to the text */
   background-clip: text; /* For other browsers */
   color: transparent; /* Make the actual text color transparent to show the gradient */
-  margin-top: 60px; /* Adjust the value as needed */  font-size: 46px;
+  margin-top: 40px; /* Adjust the value as needed */  font-size: 46px;
 
 }
 
 .title-2 {
   color: #cf2dda; /* Another example color */
-  font-size: 56px;
+  font-size: 46px;
 
 }
 
@@ -63,7 +63,7 @@ h1 {
 
 .about-me {
   color: #37abcf;
-  font-size: 56px;
+  font-size: 46px;
 }
 /* Existing styles */
 
@@ -88,7 +88,7 @@ border-radius: 20px;
 &:hover {
   background: linear-gradient(45deg, #ff9900, #ff00cc);
   border: 2px solid #f7f6f6; /* Set the border color to white */
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 &:hover::before,
@@ -143,7 +143,7 @@ border-radius: 20px;
   -webkit-background-clip: text; /* Clip the background to the text */
   background-clip: text; /* For other browsers */
   color: transparent; /* Make the actual text color transparent to show the gradient */
-  margin-top: 40px; /* Adjust the value as needed */
+  margin-top: 25px; /* Adjust the value as needed */
 }
 
 .h6 {
